@@ -93,6 +93,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
+  z-index: inherit;
 }
 
 .item {
@@ -197,6 +198,7 @@ img {
   .users-color-container {
     grid-area: userscolorcontainer;
     gap: 20px;
+    
   }
 
   .description {
@@ -249,6 +251,11 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+    
+
 }
 
 .nav div.logo {
