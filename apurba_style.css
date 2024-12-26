@@ -43,7 +43,8 @@ img {
 }
 
 .description {
-  color: #ffffff;
+  color: #070707;
+  
   padding: 0 50px;
 }
 
@@ -80,8 +81,9 @@ img {
 
 .description p {
   font-family: "Nunito", sans-serif;
-  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  font-size: clamp(0.9rem, 9vw, 1.1rem);
   line-height: 1.5;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
