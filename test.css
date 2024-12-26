@@ -73,6 +73,12 @@ body {
 }
 
 
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+
 /* Home section */
 
 .landing {
