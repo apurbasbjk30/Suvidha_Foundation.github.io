@@ -170,185 +170,6 @@ img {
   }
 }
 
-/* SECTION - CARD CONTAINER */
-
-.card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  min-height: 100vh;
-  background: rgb(67, 69, 112);
-  background: radial-gradient(
-    circle,
-    rgba(67, 69, 112, 1) 3%,
-    rgba(35, 36, 57, 1) 60%
-  );
-  overflow: hidden;
-  padding: 60px 50px 20px;
-}
-
-.card {
-  max-width: 300px;
-  aspect-ratio: 3/5;
-  border-radius: 15px;
-  margin: 20px;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.7);
-  border-left: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5),
-    inset 0px 2px 2px rgba(255, 255, 255, 0.2);
-  cursor: grab;
-}
-
-.content {
-  position: relative;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 1fr);
-  padding: 20px;
-  background: rgba(104, 104, 104, 0.5);
-  user-select: none;
-}
-
-.content::before,
-.content::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  border-radius: inherit;
-  background: conic-gradient(
-    from var(--gradient-angle),
-    rgb(109, 186, 22),
-    rgb(30, 119, 95),
-    rgb(55, 141, 167),
-    rgb(59, 91, 174),
-    rgb(144, 118, 236),
-    rgb(59, 91, 174),
-    rgb(55, 141, 167),
-    rgb(30, 119, 95),
-    rgb(109, 186, 22)
-  );
-  animation: rotation 8s linear infinite;
-}
-
-.content::after {
-  filter: blur(30px);
-}
-
-@keyframes rotation {
-  0% {
-    --gradient-angle: 0deg;
-  }
-  100% {
-    --gradient-angle: 360deg;
-  }
-}
-
-.content img {
-  aspect-ratio: 3/2;
-  border-radius: 10px;
-  grid-row: 1 / 5;
-  margin-bottom: 20px;
-  user-select: none;
-  object-fit: cover;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-.content h1 {
-  font-size: 1.2rem;
-  color: #fff;
-  text-align: center;
-  grid-row: 5 / 6;
-}
-
-.content p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #fff;
-  grid-row: 6 / 9;
-}
-
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #ece9e6 0%,
-    #ffffff 51%,
-    #ece9e6 100%
-  );
-  padding: 8px 12px;
-  color: #000;
-  box-shadow: 0 0 5px #eee;
-  outline: 0;
-  font-size: 0.9rem;
-  font-weight: 400;
-  grid-row: 9 / 10;
-  margin: 4px auto 8px;
-  cursor: pointer;
-  transition: all 0.5s ease-in;
-}
-
-.control {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 14px;
-}
-
-.control li {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, #559b9a, #3b3d8a);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5),
-    inset 0px 4px 4px rgba(255, 255, 255, 0.2);
-  padding: 12px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  color: #fff;
-  cursor: pointer;
-  transform: scale(1);
-}
-
-.control li::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background: linear-gradient(to right, #559b9a, #3b3d8a);
-  border-radius: 50%;
-  z-index: -1;
-  transition: all 0.5s ease-in;
-  opacity: 0;
-}
-
-.control li:hover::before {
-  opacity: 1;
-}
-
-@media (max-width: 1215px) {
-  .btn {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 1015px) {
-  .home {
-    grid-template-columns: 45% 50%;
-    gap: 50px;
-    padding: 140px 50px;
-  }
-
-  .btn {
-    padding: 8px 12px;
-  }
-}
 
 @media (max-width: 865px) {
   .home {
@@ -419,8 +240,6 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
 
@@ -450,7 +269,7 @@ body {
 }
 
 .nav div.main_list {
-    height: 65px;
+    height:65px;
     float: right;
 }
 
@@ -479,18 +298,6 @@ body {
 
 .nav div.main_list ul li a:hover {
     color: #00E676;
-}
-
-
-/* Home section */
-
-.landing {
-    width: 100%;
-    height: 100vh;
-    background-image: url(Home.png);
-
-    background-position: center top;
-	background-size:cover;
 }
 
 .navTrigger {
@@ -554,11 +361,6 @@ body {
         display: block;
     }
 }
-
-
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
 .navTrigger {
     cursor: pointer;
     width: 30px;
