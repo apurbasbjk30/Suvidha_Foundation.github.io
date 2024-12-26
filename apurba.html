@@ -8,7 +8,75 @@
 
 </head>
 <body>
-  
+
+  <!-- nav html   -->
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    
+</head>
+<body>
+    
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <!-- <a href="#">Your Logo</a> -->
+            <img src="SuvidhaLogo.png" alt="logo img">
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Apply</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Gallere</a></li>
+                <li><a href="#">Our Donors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+<section class="landing">
+    
+</section>
+
+<!-- <div style="height: 1000px">
+
+</div> -->
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+    
+<script src="test.js"></script>
+</body>
+</html>
+
+
+
+  <!-- landing page  -->
         <section class="home">
           <div class="description">
             <h1 class="title">
