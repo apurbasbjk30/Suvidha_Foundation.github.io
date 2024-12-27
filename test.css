@@ -1,118 +1,89 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
-
-html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); }
-
-.slides {
-    padding: 0;
-    width: 100%;
-    height: 700px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
+/* body,
+#slider, */
+.slider-wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+.wrap {
+  position: relative;
 }
-
-.slides input { display: none; }
-
-.slide-container { display: block; }
 
 .slide {
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: 700px;
-    display: block;
-    position: absolute;
-
-    transform: scale(0);
-
-    transition: all .7s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
+.slide1 {
+  background-image: url("img/Award_1.jpg");
+}
+.slide2 {
+  background-image: url("img/Award_2.jpg");
+}
+.slide3 {
+  background-image: url("img/ClimateAction.jpg");
+}
+.slide4 {
+  background-image: url("img/ClimateActionAward.png");
+}
+.slide5 {
+  background-image: url("img/Fundraising.jpg");
+}
+.slide6 {
+  background-image: url("img/SocialWork.jpg");
+}
+.slide7 {
+  background-image: url("img/Suvidha-1.jpg");
+}
+.slide8 {
+  background-image: url("img/Suvidha-4.jpg");
+}
+.slide9 {
+  background-image: url("img/Tree-Plantation.jpg");
+}
+.slide10 {
+  background-image: url("img/TreePlant.jpg");
 }
 
-.nav label {
-    width: 200px;
-    height: 100%;
-    display: none;
-    position: absolute;
-
-	  opacity: 0;
-    z-index: 9;
-    cursor: pointer;
-
-    transition: opacity .2s;
-
-    color: #FFF;
-    font-size: 156pt;
-    text-align: center;
-    line-height: 380px;
-    font-family: "Varela Round", sans-serif;
-    background-color: rgba(255, 255, 255, .3);
-    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.slide:hover + .nav label { opacity: 0.5; }
-
-.nav label:hover { opacity: 1; }
-
-.nav .next { right: 0; }
-
-input:checked + .slide-container  .slide {
-    opacity: 1;
-
-    transform: scale(1);
-
-    transition: opacity 1s ease-in-out;
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
 }
 
-input:checked + .slide-container .nav label { display: block; }
-
-.nav-dots {
-	width: 100%;
-	bottom: 9px;
-	height: 11px;
-	display: block;
-	position: absolute;
-	text-align: center;
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
 }
 
-.nav-dots .nav-dot {
-	top: -5px;
-	width: 11px;
-	height: 11px;
-	margin: 0 4px;
-	position: relative;
-	border-radius: 100%;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.6);
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
 }
 
-.nav-dots .nav-dot:hover {
-	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-
-input#img-1:checked ~ .nav-dots label#img-dot-1,
-input#img-2:checked ~ .nav-dots label#img-dot-2,
-input#img-3:checked ~ .nav-dots label#img-dot-3,
-input#img-4:checked ~ .nav-dots label#img-dot-4,
-input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6,
-input#img-7:checked ~ .nav-dots label#img-dot-7,
-input#img-8:checked ~ .nav-dots label#img-dot-8,
-input#img-9:checked ~ .nav-dots label#img-dot-9,
-input#img-10:checked ~ .nav-dots label#img-dot-10 {
-	background: rgba(0, 0, 0, 0.8);
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
 }
