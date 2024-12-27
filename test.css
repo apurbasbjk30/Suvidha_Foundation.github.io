@@ -4,8 +4,8 @@ html, body { background: #333 url("https://codepen.io/images/classy_fabric.png")
 
 .slides {
     padding: 0;
-    width: 609px;
-    height: 420px;
+    width: 100%;
+    height: 700px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -27,8 +27,8 @@ html, body { background: #333 url("https://codepen.io/images/classy_fabric.png")
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width: 100%;
+    height: 700px;
     display: block;
     position: absolute;
 
@@ -109,6 +109,10 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
-input#img-6:checked ~ .nav-dots label#img-dot-6 {
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10 {
 	background: rgba(0, 0, 0, 0.8);
 }
