@@ -80,7 +80,7 @@ tabLinks.forEach(function(el) {
 
 function openTabs(el) {
    var btnTarget = el.currentTarget;
-   var tab = btnTarget.dataset.tab;
+   var country = btnTarget.dataset.country;
 
    tabContent.forEach(function(el) {
       el.classList.remove("active");
@@ -90,7 +90,7 @@ function openTabs(el) {
       el.classList.remove("active");
    });
 
-   document.querySelector("#" + tab).classList.add("active");
+   document.querySelector("#" + country).classList.add("active");
    
    btnTarget.classList.add("active");
 }
