@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i");
 
  #wrapper {
@@ -220,6 +221,8 @@
 	 padding: 0;
 	 animation: city 1s ease;
 =======
+=======
+>>>>>>> Stashed changes
 /* body, */
 #slider,
 .slider-wrap,
@@ -356,5 +359,9 @@
     min-width: 100%; /* Ensure slides still take full width */
     min-height: 100%;
   }
+<<<<<<< Updated upstream
+}
+>>>>>>> Stashed changes
+=======
 }
 >>>>>>> Stashed changes
