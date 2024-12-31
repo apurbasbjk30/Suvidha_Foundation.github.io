@@ -760,6 +760,43 @@ button {
   margin-right: 30px;
 }
 
+.learn-aboute-suvidha{
+  margin-bottom: 30px;
+  margin-left: 0;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 45px auto;
+}
+
+.learn-aboute-suvidha p {
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #FDBE33;
+}
+
+.learn-aboute-suvidha h2{
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@media (max-width: 767.98px) {
+  .learn-aboute-suvidha-header h2 {
+      font-size: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .learn-aboute-suvidha-header h2 {
+      font-size: 35px;
+  }
+}
+
+
 .about {
   display: flex; /* Use flexbox to align children side by side */
   justify-content: space-between; /* Space between the sections */
