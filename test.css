@@ -1,260 +1,123 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i");
 
- #wrapper {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 width: 100%;
+.Cube_Face {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+ 	margin: auto;
+	-webkit-perspective: 600px;
+	        perspective: 600px;
 }
- .content {
-	 max-width: 600px;
-	 width: 100%;
-	 min-width: 260px;
-	 margin: 0 5%;
-	 margin-top: 10%;
-	 transition: 0.3s ease;
-}
- @media screen and (max-width: 512px) {
-	 .content {
-		 margin: 0 4%;
-		 margin-top: 5%;
+.Cube_Face * {
+		-webkit-transition: all 1s cubic-bezier(0.5, -0.75, 0.2, 1.5);
+		        transition: all 1s cubic-bezier(0.5, -0.75, 0.2, 1.5);
 	}
-}
-/* Tabs menu */
- .tabs {
-	 margin: 0;
-	 background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-	 display: flex;
-	 justify-content: space-between;
-	 align-items: center;
-	 height: 80px;
-	 border-radius: 2px 2px 0px 0px;
-}
- @media screen and (max-width: 512px) {
-	 .tabs {
-		 height: 40px;
-	}
-}
-/* Tab Links */
- .tablinks {
-	 background: transparent;
-	 background-image: linear-gradient(90deg, transparent 70%, rgba(255, 255, 255, 0.2) 100%);
-	 border: none;
-	 outline: none;
-	 cursor: pointer;
-	 width: 35%;
-	/*change depending on the number of tabs*/
-	 height: 80px;
-	 position: relative;
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 font-size: 16px;
-	 font-family: "IBM Plex Sans", sans-serif;
-	 overflow: hidden;
-	 transition: 0.3s ease;
-}
- @media screen and (max-width: 512px) {
-	 .tablinks {
-		 height: 40px;
-		 font-size: 12px;
-	}
-}
- .tablinks:before {
-	/* Gradient */
-	 background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	 content: "";
-	 width: 100%;
-	 height: 0px;
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 transition: 0.3s ease-in-out;
-	 z-index: 2;
-}
-/*tab buttons hover*/
- .tablinks:hover::before {
-	 height: 100%;
-	 z-index: 2;
-	 bottom: 0;
-}
- @media screen and (max-width: 512px) {
-	 .tablinks:hover::before {
-		 height: 0;
-	}
-}
-/* Tab active */
- .tablinks.active {
-	 background-color: white;
-	 z-index: 0;
-	 border-right: 0px;
-	 border-left: 0px;
-	 height: 110px;
-	 bottom: 0px;
-	 overflow: hidden;
-}
- @media screen and (max-width: 512px) {
-	 .tablinks.active {
-		 height: 60px;
-	}
-}
- .tablinks.active:before {
-	/* Gradient */
-	 content: "";
-	 width: 100%;
-	 height: 5px;
-	 top: 0;
-	 left: 0;
-}
-/* Tabs text */
- .tablinks.active p, .tablinks.active:hover p {
-	 opacity: 1;
-	 background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	 -webkit-background-clip: text;
-	 -webkit-text-fill-color: transparent;
-}
- .tablinks p {
-	 opacity: 0.6;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 z-index: 2;
-	 transition: 0.5s ease;
-	 padding: 0;
-	 margin: 0;
-	 color: #686868;
-	 backface-visibility: hidden;
-	 font-weight: 400;
-}
- .tablinks:hover p {
-	 color: white;
-	 opacity: 1;
-}
- @media screen and (max-width: 512px) {
-	 .tablinks:hover p {
-		 color: #686868;
-		 opacity: 0.6;
-	}
-}
-/* Tabs text bigger */
- .tablinks p:before {
-	 content: attr(data-title);
-	 position: absolute;
-	 height: auto;
-	 width: auto;
-	 color: white;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	 opacity: 0.1;
-	 font-size: 40px;
-	 transition: 1s ease-out;
-	 z-index: -1;
-	 font-weight: 600;
-	 top: 110%;
-}
- @media screen and (max-width: 512px) {
-	 .tablinks p:before {
-		 display: none;
-	}
-}
- .tablinks:hover p:before {
-	 opacity: 0.1;
-	 font-size: 40px;
-	 top: -80%;
-}
-/* tab content */
- .wrapper_tabcontent {
-	 background-color: white;
-	 margin-top: 0px;
-	 z-index: -3;
-	 position: relative;
-	 opacity: 1;
-	 padding: 40px 60px;
-	 overflow: hidden;
-	 transition: all 1s ease;
-	 top: 0;
-}
- .tabcontent {
-	 display: none;
-	 min-height: 180px;
-}
- @keyframes tabEffect {
-	 from {
-		 top: -40px;
-	}
-	 to {
-		 top: 0px;
-	}
-}
- .tabcontent.active {
-	 transition: all 1s ease;
-	 display: block;
-}
-/* Tab content line */
- .wrapper_tabcontent:after {
-	 content: "";
-	 height: 5px;
-	 width: 100%;
-	 position: absolute;
-	 background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	 left: 0;
-	 bottom: 0;
-	 z-index: -2;
-	 transition: all 1s ease;
-}
-/* Title */
- .tabcontent h3 {
-	 font-size: 40px;
-	 top: 75px;
-	 transform: rotate(90deg);
-	 position: absolute;
-	 left: -90px;
-	 opacity: 0.1;
-	 width: 200px;
-	 height: 60px;
-	 background: -webkit-linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	 -webkit-background-clip: text;
-	 -webkit-text-fill-color: transparent;
-	 padding: 0;
-	 animation: city 1s ease;
-}
 
- @keyframes city {
-	 from {
-		 left: -150px;
+.cube_content {
+		width: inherit;
+		height: inherit;
+		-webkit-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+		-webkit-transform: rotateY(0deg) rotateX(0deg);
+		        transform: rotateY(0deg) rotateX(0deg);
 	}
-	 to {
-		 left: -90px;
-	}
-}
-/* Text*/
- .tabcontent p {
-	 color: #686868;
-	 margin: 0;
-	 padding: 0;
-	 line-height: 28px;
-	 font-weight: 100;
-	 transition: all 1s ease;
-	 animation: fadeEffect 0.6s ease;
-	 width: 100%;
-	 font-size: 16px;
-	 font-family: "IBM Plex Sans", sans-serif;
-}
- @media screen and (max-width: 512px) {
-	 .tabcontent p {
-		 font-size: 14px;
-		 line-height: 26px;
-	}
-}
- @keyframes fadeEffect {
-	 from {
-		 opacity: 0;
-		 margin-left: 30px;
-	}
-	 to {
-		 opacity: 1;
-		 margin-left: 0;
-	}
-}
- 
+
+	       .Face,.Face:after,.Face:before {
+			display: block;
+			width: inherit;
+			height: inherit;
+			background: url('https://cdn.dribbble.com/users/5031/screenshots/7008431/dribbble.png');
+			position: absolute;
+			-webkit-transform-style: preserve-3d;
+			        transform-style: preserve-3d;
+			background-size: cover;
+			background-position: center;
+		}
+
+	       .Face.x {
+		  -webkit-transform: rotateY(90deg);
+		          transform: rotateY(90deg);
+		} 
+
+		       .Face.x:after {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/730703/screenshots/6988911/elenidebo-thisiscolossal-theroad-forchicagodesignmuseum.jpg');
+				-webkit-transform: translateZ(100px) rotateZ(-90deg);
+				        transform: translateZ(100px) rotateZ(-90deg);
+			}
+
+		       .Face.x:before {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/329207/screenshots/6220354/bemocs_geneseo_sailing.jpg');
+				-webkit-transform: translateZ(-100px) rotateZ(-90deg);
+				        transform: translateZ(-100px) rotateZ(-90deg);
+			}
+
+	       .Face.y {
+		  -webkit-transform: rotateX(90deg);
+		          transform: rotateX(90deg);
+		} 
+
+		       .Face.y:after {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/63407/screenshots/5705689/dribbble_moonlight_2x.png');
+				-webkit-transform: translateZ(100px) scale(-1);
+				        transform: translateZ(100px) scale(-1);
+			}
+
+		       .Face.y:before {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/1355613/screenshots/6441984/landscape_2x.jpg');
+				-webkit-transform: translateZ(-100px);
+				        transform: translateZ(-100px);
+			}
+
+
+	       .Face.z {
+		  -webkit-transform: rotateX(0);
+		          transform: rotateX(0);
+		} 
+
+		       .Face.z:after {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/3178178/screenshots/7013817/the_caravan_by_patryk_wojciechowicz_2x.png');
+				-webkit-transform: translateZ(100px);
+				        transform: translateZ(100px);
+			}
+
+		       .Face.z:before {
+				content: '';
+				background-image: url('https://cdn.dribbble.com/users/1361661/screenshots/6673317/music_girl.png');
+				-webkit-transform: translateZ(-100px);
+				        transform: translateZ(-100px);
+			}
+
+
+		.cube_content {
+			-webkit-animation: rotate 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);
+			animation: rotate 15s infinite cubic-bezier(1, -0.75, 0.5, 1.2);
+		}
+
+		@-webkit-keyframes rotate {
+			0%, 10% {-webkit-transform: rotateY(0deg) rotateX(0deg);transform: rotateY(0deg) rotateX(0deg);}
+			15%, 20% {-webkit-transform: rotateY(180deg) rotateX(0deg);transform: rotateY(180deg) rotateX(0deg);}
+			25%, 35% {-webkit-transform: rotateY(180deg) rotateX(270deg);transform: rotateY(180deg) rotateX(270deg);}
+			40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg);transform: rotateY(180deg) rotateX(90deg);}
+			55%, 65% {-webkit-transform: rotateY(-90deg) rotateX(90deg);transform: rotateY(-90deg) rotateX(90deg);}
+			70%, 80% {-webkit-transform: rotateY(90deg) rotateX(90deg);transform: rotateY(90deg) rotateX(90deg);}
+			90%, 95% {-webkit-transform: rotateY(0deg) rotateX(90deg);transform: rotateY(0deg) rotateX(90deg);}
+		}
+
+		@keyframes rotate {
+			0%, 10% {-webkit-transform: rotateY(0deg) rotateX(0deg);transform: rotateY(0deg) rotateX(0deg);}
+			15%, 20% {-webkit-transform: rotateY(180deg) rotateX(0deg);transform: rotateY(180deg) rotateX(0deg);}
+			25%, 35% {-webkit-transform: rotateY(180deg) rotateX(270deg);transform: rotateY(180deg) rotateX(270deg);}
+			40%, 50% {-webkit-transform: rotateY(180deg) rotateX(90deg);transform: rotateY(180deg) rotateX(90deg);}
+			55%, 65% {-webkit-transform: rotateY(-90deg) rotateX(90deg);transform: rotateY(-90deg) rotateX(90deg);}
+			70%, 80% {-webkit-transform: rotateY(90deg) rotateX(90deg);transform: rotateY(90deg) rotateX(90deg);}
+			90%, 95% {-webkit-transform: rotateY(0deg) rotateX(90deg);transform: rotateY(0deg) rotateX(90deg);}
+		}
+
