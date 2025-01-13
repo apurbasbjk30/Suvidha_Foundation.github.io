@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+     <!-- nav html   -->
+
+
+    
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <!-- <a href="#">Your Logo</a> -->
+            <img src="../img/SuvidhaLogo.png" alt="logo img">
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Apply</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Our Donors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script> 
+<div class="gallery">
+   <p>Our  Gallery</p>
+   <h2>Moments of Impact: Capturing the Journey of Our NGO</h2>
+</div>
+
+
+<section class="section">
+    <h1>Nom Nom Gallery</h1>
+    <div class="grid">
+      <div class="item">
+        <div class="item__details">
+          jelly-o brownie sweet
+        </div>
+      </div>
+      <div class="item item--large">
+        <div class="item__details">
+          Muffin jelly gingerbread 
+        </div>
+      </div>
+      <div class="item item--medium">
+        <div class="item__details">
+          sesame snaps chocolate
+        </div>
+      </div>
+      <div class="item item--large">
+        <div class="item__details">
+          Oat cake
+        </div>
+      </div>
+      <div class="item item--full">
+        <div class="item__details">
+           jujubes cheesecake
+        </div>
+      </div>
+      <div class="item item--medium">
+        <div class="item__details">
+          Dragée pudding brownie
+        </div>
+      </div>
+      <div class="item item--large">
+        <div class="item__details">
+          Oat cake
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__details">
+          powder toffee
+        </div>
+      </div>
+      <div class="item item--medium">
+        <div class="item__details">
+          pudding cheesecake
+        </div>
+      </div>
+      <div class="item item--large">
+        <div class="item__details">
+          toffee bear claw 
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__details">
+          cake cookie croissant
+        </div>
+      </div>
+      <div class="item item--medium">
+        <div class="item__details">
+          liquorice sweet roll
+        </div>
+      </div>
+      <div class="item item--medium">
+        <div class="item__details">
+          chocolate marzipan
+        </div>
+      </div>
+      <div class="item item--large">
+        <div class="item__details">
+          danish dessert lollipop
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__details">
+          sugar plum dragée
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+    
+</body>
+</html>
