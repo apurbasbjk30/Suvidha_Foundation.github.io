@@ -8,7 +8,53 @@
 
 </head>
 <body>
+   
+     <!-- nav html   -->
 
+
+    
+     <nav class="nav">
+      <div class="container">
+          <div class="logo">
+              <!-- <a href="#">Your Logo</a> -->
+              <img src="../img/SuvidhaLogo.png" alt="logo img">
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#">Apply</a></li>
+                  <li><a href="#">Event</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">Our Donors</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
+  
+  
+  <!-- Jquery needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+  <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+  </script> 
+  <div class="Events">
+     <p>Events</p>
+     <h2>Our Charity Events: Celebrating Our Impact Together</h2>
+  </div>
+      
 
 <main>
   <div id="gallery">
@@ -16,15 +62,7 @@
       <img src="../img/Free-Workshop-event-8.jpg" alt="Pink and blue clouds at sunset. " title="Photo by Jeremy Doddridge for Unsplash">
       <figcaption>8 PM, Summer</figcaption>
     </figure>
-    <!-- <figure>
-      <div>
-        <div>
-          <h2>Note</h2>
-          <p>Scroll Animation!</p>
-          <p><br><small>Related work : <br><a target="_blank" href="https://codepen.io/wakana-k/pen/oNJxbPw">Hover animation version</a></small></p>
-        </div>
-      </div>
-    </figure> -->
+    
     <figure>
       <img src="../img/BooksDistribution.jpg" alt="Low angle view up into a sky filled with deep blue clouds. " title="Photo by Matthew Brayer for Unsplash">
       <figcaption>3 PM, Winter</figcaption>
