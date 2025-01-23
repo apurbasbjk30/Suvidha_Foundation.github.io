@@ -1329,6 +1329,7 @@ font-size: 45px;
 
 a {
   color: #fff;
+  font-size: 20px;
   text-decoration: none;
 }
 .pg-footer {
@@ -1338,6 +1339,7 @@ a {
 .footer-logo img{
     height: inherit;
     width: 250px;
+    
 }
 
 .footer {
@@ -1382,12 +1384,13 @@ a {
     display: inline-block;
 }
 .footer-menu {
-    margin-top: 30px;
+    margin-top: 0px;
+    font-size: 15px;
 }
 
 .footer-menu-name {
     color: #fffff2;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 900;
     letter-spacing: .1em;
     line-height: 18px;
@@ -1412,6 +1415,7 @@ a {
     margin-bottom: 0;
     margin-top: 10px;
     padding-left: 0;
+    font-size: 15px;
 }
 .footer-menu-list li {
     margin-top: 8px;
@@ -1575,7 +1579,7 @@ a {
 
 .footer-copyright-text {
   color: #fff;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 18px;
     margin-bottom: 0;
