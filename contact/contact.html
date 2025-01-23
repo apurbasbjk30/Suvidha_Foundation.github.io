@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+      <!-- nav html   -->
+
+
+    
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <!-- <a href="#">Your Logo</a> -->
+            <img src="../img/SuvidhaLogo.png" alt="logo img">
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe4vDnye2muE9yynJek6Swvamie2Idbu-LWAhQa0oMus5KJDg/viewform">Apply</a></li>
+                <li><a href="./events/event.html">Event</a></li>
+                <li><a href="./gallery/gallery.html">Gallery</a></li>
+                <li><a href="#">Our Donors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+</nav>
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script> 
+
+<div class="contact">
+    <p>Get In Touch</p>
+    <h2>Contact for any query</h2>
+ </div>
+
+
+<div class="contact-main">
+    <div class="contact-contact">
+         <div class="donate-here">
+            <button class="donate-here-1 donate-here-11"> Donate 
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAaaHU-k256CY6_83JPBOYeVFtKuKBvqMJb7oBIsDLKRmwNg/viewform"></a>
+            </button>
+        </div>
+    </div>
+
+</div>
+    
+</body>
+</html>
