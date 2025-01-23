@@ -30,21 +30,12 @@ body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
-.nav div.logo a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 2.5rem;
-}
-
-.nav div.logo a:hover {
-    color: #00E676;
-}
 
 .nav div.main_list {
-    height:65px;
+    height:55px;
     float: right;
 }
 
@@ -66,13 +57,13 @@ body {
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #c40707;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #7b072a;
 }
 
 .navTrigger {
@@ -123,8 +114,8 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
+        background-color: #ce8787;
+        
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -153,7 +144,7 @@ body {
 }
 
 .navTrigger i {
-    background-color: #000000;
+    background-color: #efd317;
     border-radius: 2px;
     content: '';
     display: block;
@@ -343,7 +334,7 @@ body {
 
 .myH2 {
 	text-align:center;
-	font-size: 4rem;
+	font-size: 2rem;
 }
 .myP {
 	text-align: justify;
@@ -668,10 +659,10 @@ a {
   }
   
   .footer-social-link.linkedin {
-      height: 26px;
-      left: 3px;
-      top: 11px;
-      width: 26px;
+    height: 46px;
+    left: 3px;
+    top: 11px;
+    width: 46px;
   }
   
   .footer-social-link {
@@ -719,10 +710,8 @@ a {
   }
   
   .footer-social-link.Instagram {
-      height: 34px;
-      left: 172px;
-      top: 7px;
-      width: 34px;
+    left: 167.5px;
+    top: 4px;
   }
   
   .footer-copyright {
