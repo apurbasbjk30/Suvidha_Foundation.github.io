@@ -445,7 +445,99 @@ td button:focus {
 }
 
 
-/*  */
+/*  acount details*/
+
+
+
+.account-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #eae5e5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.account-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.account-details h2 {
+  margin: 20px 0;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  padding-left: 40px;
+}
+.account-details h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+  }
+  
+
+.account-details p {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #34495e;
+}
+
+.account-details strong {
+    color: #2980b9;
+}
+
+.account-image {
+    flex: 0 0 200px;
+    margin-left: 20px; /* Add space between image and details */
+}
+
+.account-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .account-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .account-details {
+        padding-right: 0; /* Remove extra right padding */
+        text-align: center; /* Center text */
+    }
+
+    .account-image {
+        flex: 0 0 300px; /* Increase the image size for small screens */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Add space above image */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .account-container {
+        padding: 15px; /* Further reduce padding for very small screens */
+    }
+
+    .account-details p {
+        font-size: 14px; /* Slightly smaller text for small screens */
+    }
+
+    .account-image img {
+        max-width: 90%; /* Limit image width to 90% of the container */
+    }
+}
 
 
 /* Footer  */
