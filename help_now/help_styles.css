@@ -387,8 +387,6 @@ body {
 /* Table styling */
 table {
     width: 100%;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 20px;
     border-spacing: 0;
     background-color: white;
@@ -445,12 +443,7 @@ td button:focus {
         font-size: 12px;
     }
 }
-@media (max-width: 768px) {
-    table {
-        margin-left: 20px; /* Decrease margin on smaller screens */
-        margin-right: 20px; /* Decrease margin on smaller screens */
-    }
-}
+
 
 
 /*  acount details*/
