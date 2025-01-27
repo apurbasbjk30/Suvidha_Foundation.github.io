@@ -1,0 +1,172 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 32px;
+    color: #4CAF50;
+}
+
+/* Content Section Layout */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Left Content (Donation Cause & Organization Info) */
+.left-content {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.left-content h3 {
+    font-size: 22px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.left-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.left-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Right Form Section */
+.right-form {
+    flex: 1;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.right-form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.right-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.right-form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit Button */
+.right-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.right-form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content, .right-form {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .left-content h2, .right-form h2 {
+        font-size: 26px;
+    }
+
+    .left-content h3 {
+        font-size: 20px;
+    }
+
+    .right-form button {
+        font-size: 16px;
+    }
+}
