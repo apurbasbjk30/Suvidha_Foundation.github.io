@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fafafa;
+    background-color:  #fff;
     color: #333;
     line-height: 1.6;
     padding: 30px;
@@ -21,11 +21,11 @@ header {
     justify-content: center;
     gap: 15px;
     margin: 0 100px 40px 100px;
-
+    background-color:  #fff;
     padding: 10px 0;
-    background: linear-gradient(135deg, #b1ad8b, #b4c15c);
+    /* background: linear-gradient(135deg, #b1ad8b, #b4c15c); */
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
 }
 
 header img {
@@ -37,7 +37,7 @@ header img {
 
 header h2 {
     font-size: 32px;
-    color: white;
+    color: rgb(0, 89, 255);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
@@ -65,7 +65,7 @@ header h2 {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -76,13 +76,13 @@ header h2 {
 
 .left-content h2 {
     font-size: 28px;
-    color: #333;
+    color: #245ca4;
     margin-bottom: 15px;
 }
 
 .left-content h3 {
     font-size: 22px;
-    color: #666;
+    color: #245ca4;
     margin-top: 20px;
 }
 
@@ -110,12 +110,13 @@ header h2 {
 
 /* Right Form Section */
 .right-form {
+    height: 600px;
     flex: 1;
     max-width: 500px;
     background-color: #fff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -126,7 +127,7 @@ header h2 {
 
 .right-form h2 {
     font-size: 28px;
-    color: #333;
+    color: #245ca4;
     margin-bottom: 20px;
     text-align: center;
 }
