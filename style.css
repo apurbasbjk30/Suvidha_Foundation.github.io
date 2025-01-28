@@ -1366,8 +1366,6 @@ img {
 }
 
 .services-contant {
-  /* background-color: rgb(255, 255, 255); */
-  /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
   background-color: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
@@ -1385,7 +1383,7 @@ margin: 20px;
 
 .card_content {
   padding: 0rem;
-  /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+
 }
 
 .card_content h2 {
