@@ -1327,6 +1327,7 @@ font-size: 45px;
   justify-content: center;
   align-items: center;
   height: auto;
+  margin-bottom:35px ;
 }
 
 .service{
@@ -1374,6 +1375,13 @@ img {
   flex-direction: row;
   overflow: hidden;
 }
+.services-image-4{
+  background-blend-mode: screen;
+}
+
+.services-image-3{
+margin: 20px;
+}
 
 .card_content {
   padding: 0rem;
@@ -1399,7 +1407,9 @@ img {
   font-weight: 400;
 }
 
-
+.abc{
+  height: 500px;
+}
 
 
 
