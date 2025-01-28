@@ -1322,6 +1322,39 @@ font-size: 45px;
   animation: float 6s ease-in-out infinite;
 } */
 
+
+
+.services-heading{
+   
+  margin-bottom: 30px;
+  margin-left: 0;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 45px auto;
+}
+
+.services-heading p {
+  display: flex;
+  justify-content: center;
+  padding-top: 165px;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #FDBE33;
+}
+
+.services-heading h2{
+  margin: 0;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
 .services{
   display: flex;
   justify-content: center;
@@ -1374,7 +1407,7 @@ img {
   overflow: hidden;
 }
 .services-image-4{
-  background-blend-mode: screen;
+  background-blend-mode: inherit;
 }
 
 .services-image-3{
