@@ -1323,76 +1323,55 @@ font-size: 45px;
 } */
 
 .services{
-  height: auto;
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
-
-}
-
-.services-container{
-  height: 600px;
-  width: 90%;
   display: flex;
-  padding: 40px;
-
-  /* align-items: center; */
-  /* gap: 35px; */
-
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
-.services-left{
-  background-image: url(./img/Healthy_food.jpg);
-  /* object-fit: cover; */
-  width: 200px;
-  height: 200px;
+.service{
+  width: 90%;
+
 }
-
-
-.services-right{
-  padding: 40px;
-  width: 200px;
-  height: 200px;
-}
-
-
 img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
 }
 
-.cards {
+.services-card {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.cards_item {
+.services-cards_item {
   display: flex;
   padding: 1rem;
 }
 
 @media (min-width: 40rem) {
-  .cards_item {
+  .services-cards_item{
     width: 50%;
   }
 }
 
 @media (min-width: 56rem) {
-  .cards_item {
+  .services-cards_item {
     width: 33.3333%;
   }
 }
 
-.card {
+.services-contant {
   /* background-color: rgb(255, 255, 255); */
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+  background-color: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
 }
 
@@ -1401,8 +1380,8 @@ img {
   /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
 }
 
-.card_title {
-  color: #ffffff;
+.card_content h2 {
+  color: #000;
   padding: 8px;
   font-size: 2.5rem;
   font-weight: 700;
@@ -1411,8 +1390,8 @@ img {
   margin: 0px;
 }
 
-.card_text {
-  color: #ffffff;
+.card_content p {
+  color: #000;
   padding: 0px 8px 8px 8px;
   font-size: 1.5rem;
   line-height: 1.5;
