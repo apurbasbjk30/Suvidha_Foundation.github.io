@@ -1243,17 +1243,24 @@ button {
 
 
 .apply-intern{
-  min-height: 500px;
-  width: 100%;
-  padding: 12px;
+  /* min-height: 500px; */
+  align-items: center;
   display: flex;
+  justify-content: center;
+}
+.apply-contant{
+  display: flex;
+  width: 90%;
+  
 }
 
 .apply-left{
   text-align: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 50%;
+  padding: 15px;
 }
 
 /* .content-intern{
@@ -1278,49 +1285,71 @@ font-size: 45px;
 
 .apply-right{
   width: 50%;
-  height: 10%;
+  padding: 15px;
 
 }
 
-/* .floating-domain h2 {
-  margin-top: 25px;
-  text-align: center;
-  font-weight: lighter;
-  text-transform: uppercase;
-  color: #eee;
-} */
 
-@keyframes float {
-  0% {
-    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-    transform: translatey(0px);
- }
-  50% {
-    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
-    transform: translatey(-20px);
- }
-  100% {
-   /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-    transform: translatey(0px);
- }
-}
-/* .floating {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.floating-domain {
-  background-color: #333;
-  width: 200px;
-  height: 75px;
-  box-sizing: border-box;
-  border-radius: 5rem 5rem 0rem 5rem;
 
-  animation: float 6s ease-in-out infinite;
-} */
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .apply-contant {
+    flex-direction: column;
+  }
+  .apply-left {
+    width: 100%;
+    padding: 10px;
+  }
+  .apply-right {
+    width: 100%;
+    padding: 10px;
+  }
+  .apply-left h2 {
+    font-size: 30px;
+  }
+  .apply-left h4 {
+    font-size: 1.5rem;
+  }
+  .apply-left p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-left h2 {
+    font-size: 25px;
+  }
+  .apply-left h4 {
+    font-size: 1.2rem;
+  }
+  .apply-left p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .apply-left {
+    padding: 5px;
+  }
+  .apply-right {
+    padding: 5px;
+  }
+  .apply-left h2 {
+    font-size: 20px;
+  }
+  .apply-left h4 {
+    font-size: 1rem;
+  }
+  .apply-left p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
 
 
 
@@ -1337,7 +1366,7 @@ font-size: 45px;
 .services-heading p {
   display: flex;
   justify-content: center;
-  padding-top: 165px;
+  padding-top: 65px;
   margin-bottom: 5px;
   position: relative;
   font-size: 35px;
