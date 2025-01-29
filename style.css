@@ -1406,6 +1406,7 @@ img {
   flex-direction: row;
   overflow: hidden;
 }
+
 .services-image-4{
   background-blend-mode: inherit;
 }
@@ -1415,7 +1416,8 @@ margin: 20px;
 }
 
 .card_content {
-  padding: 0rem;
+  /* width: 1000px; */
+  padding: 1rem;
 
 }
 
@@ -1438,9 +1440,16 @@ margin: 20px;
   font-weight: 400;
 }
 
-.abc{
-  height: 500px;
+/* stats  */
+#minimal-statistics{
+  width: 90%;
 }
+.stats-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
