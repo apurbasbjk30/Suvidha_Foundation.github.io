@@ -1464,7 +1464,7 @@ margin: 20px;
   
 }
 .collaborative-heading h1{
-  font-size: 45px;
+  font-size: 35px;
   color: #041664;
   font-weight: bolder;
 }
@@ -1476,13 +1476,18 @@ margin: 20px;
 }
 .collaborative-logo{
   margin: 45px;
-  width: 400px;
-  height: 200px;
+  width: 150px;
+  height: 100px;
 }
 
 @media (max-width: 768px) {
   .collaborative-heading h1 {
     font-size: 30px;
+  }
+  .collaborative-logo{
+    margin: 25px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -1490,11 +1495,21 @@ margin: 20px;
   .collaborative-heading h1 {
     font-size: 25px;
   }
+  .collaborative-logo{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 320px) {
   .collaborative-heading h1 {
     font-size: 20px;
+  }
+  .collaborative-logo{
+    margin: 10px;
+    width: 100px;
+    height: 100px;
   }
 }
 
