@@ -1465,6 +1465,14 @@ margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+}
+.media-body h3{
+  font-size: 20px;
+}
+
+.media-body{
+  font-size: 20px;
 }
 
 /* collaborative */
