@@ -785,7 +785,7 @@ button {
 
 .about_left, .about_right {
   flex: 1; /* Allow both sections to grow equally */
-  margin: 20px; /* Optional: Add some margin between sections */
+  margin: 20px;
 }
 @media (max-width: 768px) {
   .about {
@@ -797,15 +797,13 @@ button {
 /* about left */
 .about_left{
   height: 80vh; /* Set a specific height for the left section */
-  padding: 10px; /* Optional: Add some padding */
-
+  padding: 20px; 
   transform: rotate(0deg);
   transition: transform 0.5s;
   display: flex; /* Use flexbox for alignment */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 100%; /* Ensure it takes full height of the parent */
-
+  height: 100%;
   flex-direction: column; /* Stack children vertically */
   position: relative; /* Position relative for absolute children */
 
@@ -814,7 +812,12 @@ button {
 
 @media (max-width: 768px) {
   .about_left {
-      height: auto; /* Allow height to adjust on smaller screens */
+    width: 100%;
+    height: auto; /* Allow height to adjust on smaller screens */
+  }
+  .about-right {
+    width: 100%;
+    padding: 10px;
   }
 
   .Cube_Face {
@@ -826,8 +829,8 @@ button {
 	position: relative;
 	top: 90px;
 	bottom: 20px;
-	right: 10px;
-	left: 30px;
+	right: 5px;
+	left: 5px;
 	width: 300px;
 	height: 300px;
  	margin: auto;
@@ -1272,7 +1275,6 @@ font-size: 45px;
   width: 50%;
   padding: 15px;
 
-
 }
 
 
@@ -1300,7 +1302,6 @@ font-size: 45px;
   }
   .apply-left p {
     font-size: 1.5rem;
-    font-weight: 200px;
   }
 }
 
@@ -1309,12 +1310,10 @@ font-size: 45px;
     font-size: 25px;
   }
   .apply-left h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .apply-left p {
-    font-size: 1.5rem;
-    font-weight: 200px;
-    
+    font-size: 1.2rem;
   }
 }
 
@@ -1329,11 +1328,10 @@ font-size: 45px;
     font-size: 20px;
   }
   .apply-left h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .apply-left p {
-    font-size: 1rem;
-    font-weight: 200px;
+    font-size: 1.1rem;
   }
 }
 
@@ -1531,80 +1529,214 @@ margin: 20px;
     height: 100px;
   }
 }
-h2{
-  text-align:center;
-  padding: 20px;
-}
-/* Slider */
+
 /* testimonial */
-/* /* 
-/* General styling for the Testimonial Section */
-/* /* .testimonial-section {
-  background-color: #f9f9f9;
-  padding: 60px 0;
+/* .owl-buttons {
+  display: none;
+}
+.owl-carousel:hover .owl-buttons {
+  display: block;
 }
 
-.section-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.testimonial-item {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.owl-item {
   text-align: center;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
-.testimonial-img {
-  width: 25%;
-  height:25%;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 300px;
+  margin: 0;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
 }
-
-.customer-name {
-  font-size: 22px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+  padding-left: 20px;
 }
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+  padding-right: 20px;
+} */
 
-.testimonial-text {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-}
-
-
-.owl-carousel .owl-nav {
-  display: none; 
-}
-
-.owl-carousel .owl-dots {
+.owl-item {
   text-align: center;
-  margin-top: 20px;
+} */
+
+/* testimonial 2 */
+testimonial-2 .testimonial{
+  width: 70%;
+  text-align: center;
+  
+}
+.testimonial-heading{
+  padding-bottom: 45px;
+}
+.testimonial h1{
+  font-size: 45px;
+  color: #041664;
+  
+  font-weight: bolder;
+  
+}
+testimonial-2 {
+	margin: 0;
+	/* background-image: linear-gradient(90deg, #201A35, #0B0320); */
+	color: #fff;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
 }
 
-.owl-carousel .owl-dots .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ccc;
-  transition: background-color 0.3s;
+.slider-2 {
+	width: 100%;
+}
+.slider-2 input {
+	display: none;
+}
+.testimonials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 350px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.testimonials .item {
+	width: 450px;
+	padding: 30px;
+	border-radius: 5px;
+	background-color: #e4b9d5;
+  /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); */
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	text-align: center;
+	transition: transform 0.4s;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
+	cursor: pointer;
+}
+.testimonials .item img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 13px solid #3B344D;
+}
+.testimonials .item p {
+	color: #000000;
+  
+}
+.testimonials .item h2 {
+	font-size: 14px;
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dots label {
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #0d0d0e;
+	margin: 7px;
+	transition-duration: 0.2s;
 }
 
-.owl-carousel .owl-dots .owl-dot.active {
-  background-color: #007bff;
-}  */  */
+#t-1:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-4"],
+#t-5:checked ~ .dots label[for="t-5"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-1:checked ~ .dots label[for="t-2"],
+#t-2:checked ~ .dots label[for="t-1"],
+#t-2:checked ~ .dots label[for="t-3"],
+#t-3:checked ~ .dots label[for="t-2"],
+#t-3:checked ~ .dots label[for="t-4"],
+#t-4:checked ~ .dots label[for="t-3"],
+#t-4:checked ~ .dots label[for="t-5"],
+#t-5:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-1:checked ~ .testimonials label[for="t-5"] {
+	transform: translate3d(1200px, 0, -360px) rotateY(-45deg);
+}
+#t-1:checked ~ .testimonials label[for="t-4"],
+#t-2:checked ~ .testimonials label[for="t-5"] {
+	transform: translate3d(900px, 0, -270px) rotateY(-35deg);
+	z-index: 1;
+}
+#t-1:checked ~ .testimonials label[for="t-3"],
+#t-2:checked ~ .testimonials label[for="t-4"],
+#t-3:checked ~ .testimonials label[for="t-5"] {
+	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+	z-index: 2;
+}
+#t-1:checked ~ .testimonials label[for="t-2"],
+#t-2:checked ~ .testimonials label[for="t-3"],
+#t-3:checked ~ .testimonials label[for="t-4"],
+#t-4:checked ~ .testimonials label[for="t-5"] {
+	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+	z-index: 3;
+}
+#t-2:checked ~ .testimonials label[for="t-1"],
+#t-3:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-3"],
+#t-5:checked ~ .testimonials label[for="t-4"] {
+	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-3:checked ~ .testimonials label[for="t-1"],
+#t-4:checked ~ .testimonials label[for="t-2"],
+#t-5:checked ~ .testimonials label[for="t-3"] {
+	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+#t-5:checked ~ .testimonials label[for="t-2"],
+#t-4:checked ~ .testimonials label[for="t-1"] {
+	transform: translate3d(-900px, 0, -270px) rotateY(35deg);
+}
+#t-5:checked ~ .testimonials label[for="t-1"] {
+	transform: translate3d(-1200px, 0, -360px) rotateY(45deg);
+}
+#t-1:checked ~ .testimonials label[for="t-1"],
+#t-2:checked ~ .testimonials label[for="t-2"],
+#t-3:checked ~ .testimonials label[for="t-3"],
+#t-4:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-4"],
+#t-5:checked ~ .testimonials label[for="t-5"] {
+	z-index: 4;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 300px;
+  margin: 0;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+  padding-left: 20px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+  padding-right: 20px;
+}
+
+
+
 
 /* Footer  */
 
