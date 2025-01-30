@@ -33,7 +33,7 @@ img {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 
   overflow: hidden;
-  padding: 130px 80px;
+  padding: 130px auto;
 }
 
 .description {
@@ -1582,6 +1582,9 @@ testimonial-2 .testimonial{
   width: 70%;
   text-align: center;
   
+}
+.testimonial-heading{
+  padding-bottom: 45px;
 }
 .testimonial h1{
   font-size: 45px;
