@@ -3,58 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Testimonials</title>
+    <title>Bootstrap Carousel Testimonial</title>
 
-    <!-- Add Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    
-    <!-- Add custom CSS -->
+    <!-- Add Bootstrap 4 CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add your custom CSS (if needed) -->
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <section class="testimonial-section">
-        <div class="container text-center">
-            <h2 class="section-title">What Our Customers Say</h2>
+    <div class="container-fluid my-5">
+        <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Nullam Condimentum Nibh Etiam Sem</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                        </div>
+                    </div>
+                </div><!-- /Slide 1 -->
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Nullam Condimentum Nibh Etiam Sem</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                        </div>
+                    </div>
+                </div><!-- /Slide 2 -->
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3>Ndimentum Nibh Etiam Sem</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                        </div>
+                    </div>
+                </div><!-- /Slide 3 -->
+            </div><!-- /Carousel items -->
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Nullam CondSem</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                    </div>
+                </div>
+            </div><!-- /Slide 3 -->
+        </div><!-- /Carousel items -->
+        <div class="carousel-item">
             <div class="row">
-                <div class="col-md-12">
-                    <!-- Owl Carousel -->
-                    <div class="owl-carousel testimonial-slider">
+                <div class="col-md-4">
+                    <h3>Nullam Co Sem</h3>
+                </div>
+                <div class="col-md-8">
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </div>
+        </div><!-- /Slide 3 -->
+    </div><!-- /Carousel items -->
+    <div class="carousel-item">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>ndimentum Nibh Etiam Sem</h3>
+            </div>
+            <div class="col-md-8">
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </div>
+        </div>
+    </div><!-- /Slide 3 -->
+</div><!-- /Carousel items -->
 
-                        <!-- Testimonial Item 1 -->
-                        <div class="testimonial-item">
-                            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Customer" class="testimonial-img">
-                            <h3 class="customer-name">John Doe</h3>
-                            <p class="testimonial-text">"This is an amazing service! I couldn't be more happy with my experience. The team was responsive and the process was smooth and fast!"</p>
-                        </div>
+            <!-- Carousel controls -->
+            <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a> -->
+        </div><!-- /Carousel -->
+    </div><!-- /Container -->
 
-                        <!-- Testimonial Item 2 -->
-                        <div class="testimonial-item">
-                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Customer" class="testimonial-img">
-                            <h3 class="customer-name">Jane Smith</h3>
-                            <p class="testimonial-text">"Incredible experience from start to finish! Highly recommend this company. The team really knows how to take care of their clients!"</p>
-                        </div>
-
-                        <!-- Testimonial Item 3 -->
-                        <div class="testimonial-item">
-                            <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Customer" class="testimonial-img">
-                            <h3 class="customer-name">Mark Lee</h3>
-                            <p class="testimonial-text">"Amazing service and fantastic quality! I will definitely be coming back for more in the future. Keep up the great work!"</p>
-                        </div>
-
-                    </div> <!-- /testimonial-slider -->
-                </div> <!-- /col-md-12 -->
-            </div> <!-- /row -->
-        </div> <!-- /container -->
-    </section> <!-- /testimonial-section -->
-
-    <!-- Add jQuery -->
+    <!-- Add Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Add Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!-- Add custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Optional: Add custom JS -->
     <script src="test.js"></script>
 </body>
 </html>
