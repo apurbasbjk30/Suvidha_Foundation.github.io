@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suvidha Foundation - Clothes Distribution Donation</title>
+    <title>Customer Testimonials</title>
+
+    <!-- Add Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Add custom CSS -->
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
+    <section class="testimonial-section">
+        <div class="container text-center">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Owl Carousel -->
+                    <div class="owl-carousel testimonial-slider">
 
-    <header>
-        <img src="./img/SuvidhaLogo.png">
-        <h1>Suvidha Foundation </h1>
-        <h2>Clothes Distribution</h2>
-        <p>Support providing clothes to those in need.</p>
-    </header>
+                        <!-- Testimonial Item 1 -->
+                        <div class="testimonial-item">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Customer" class="testimonial-img">
+                            <h3 class="customer-name">John Doe</h3>
+                            <p class="testimonial-text">"This is an amazing service! I couldn't be more happy with my experience. The team was responsive and the process was smooth and fast!"</p>
+                        </div>
 
-    <section class="about">
-        <h2>Organisation Details:</h2>
-        <p>Suvidha Foundation (Suvidha Mahila Mandal) is a non-profit organization committed to empowering women and promoting social welfare. Through initiatives in education, healthcare, and livelihood support, the foundation strives to uplift underprivileged communities and create lasting change. Your donation helps us bring hope and opportunities to those in need.</p>
-    </section>
+                        <!-- Testimonial Item 2 -->
+                        <div class="testimonial-item">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Customer" class="testimonial-img">
+                            <h3 class="customer-name">Jane Smith</h3>
+                            <p class="testimonial-text">"Incredible experience from start to finish! Highly recommend this company. The team really knows how to take care of their clients!"</p>
+                        </div>
 
-    <section class="donation">
-        <h2>Make a Donation</h2>
-        <form action="https://razorpay.com/payment-page-link" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" >
+                        <!-- Testimonial Item 3 -->
+                        <div class="testimonial-item">
+                            <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Customer" class="testimonial-img">
+                            <h3 class="customer-name">Mark Lee</h3>
+                            <p class="testimonial-text">"Amazing service and fantastic quality! I will definitely be coming back for more in the future. Keep up the great work!"</p>
+                        </div>
 
-            <label for="mobile">Your Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" >
+                    </div> <!-- /testimonial-slider -->
+                </div> <!-- /col-md-12 -->
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+    </section> <!-- /testimonial-section -->
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" >
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-            <label for="amount">Donation Amount (INR):</label>
-            <input type="number" id="amount" name="amount" value="2000" readonly>
+    <!-- Add Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-            <button type="submit">Donate Now</button>
-        </form>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-         <a href="mailto:info@suvidhafoundationedutech.org">info@suvidhafoundationedutech.org</a>
-         <a href="tel:+917020044091">7020044091</a>
-    </section>
-
-    <section class="terms">
-        <h2>Terms & Conditions</h2>
-        <p>You agree to share information entered on this page with Suvidha Mahila Mandal Walni (owner of this page) and Razorpay, adhering to applicable laws.</p>
-    </section>
-
-
-
+    <!-- Add custom JS -->
+    <script src="test.js"></script>
 </body>
 </html>
