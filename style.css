@@ -217,7 +217,7 @@ img {
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 html,
-body {
+nav-bar{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -229,6 +229,7 @@ body {
 /* Navbar section */
 
 .nav {
+  
     width: 100%;
     height: 65px;
     position: fixed;
@@ -309,13 +310,13 @@ body {
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .container {
         margin: 0;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px)  {
     .navTrigger {
         display: block;
     }
@@ -566,11 +567,11 @@ body {
 	padding-right:15%;
 	font-size: 20px;
 }
-@media all and (max-width:700px){
+/* @media all and (max-width:700px){
 	.myP {
 		padding:2%;
 	}
-}
+} */
 
 
 
@@ -1807,9 +1808,9 @@ a {
 
 .footer-menu-name {
     color: #fffff2;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
-    letter-spacing: .1em;
+    letter-spacing: .01em;
     line-height: 18px;
     margin-bottom: 0;
     margin-top: 0;
@@ -1835,7 +1836,7 @@ a {
     font-size: 15px;
 }
 .footer-menu-list li {
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .footer-menu-list li :hover{
@@ -1854,38 +1855,7 @@ a {
 .button:last-of-type {
     margin-right: 0;
 }
-/* .footer-call-to-action-button {
-    background-color: #027b9a;
-    border-radius: 21px;
-    color: #fffff2;
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: .1em;
-    line-height: 18px;
-    padding: 12px 30px;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background-color .2s;
-    cursor: pointer;
-    position: relative;
-} */
-/* .footer-call-to-action {
-    margin-top: 30px;
-} */
-/* .footer-call-to-action-title {
-    color: #fffff2;
-    font-size: 14px;
-    font-weight: 900;
-    letter-spacing: .1em;
-    line-height: 18px;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-transform: uppercase;
 
-
-} */
 .footer-call-to-action-link-wrapper {
     margin-bottom: 0;
     margin-top: 0px;
