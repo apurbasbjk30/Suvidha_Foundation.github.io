@@ -1743,11 +1743,11 @@ testimonial-2 {
 ====================== */
 
 /* Main Footer */
-footer .main-footer{	padding: 20px 0;	background: #043c80;font-size: 15px;}
+footer .main-footer{	padding: 20px 0;	background: #803229;font-size: 15px;}
 footer ul{	padding-left: 0;	list-style: none;}
 
 /* Copy Right Footer */
-.footer-copyright {	background: #222;	padding: 5px 0;}
+.footer-copyright {	background: #2f2f48;	padding: 5px 0;}
 .footer-copyright .logo {    display: inherit;}
 .footer-copyright nav {    float: right;    margin-top: 5px;}
 .footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
