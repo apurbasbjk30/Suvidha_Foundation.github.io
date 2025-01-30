@@ -1,8 +1,10 @@
+
+
 /* nav css  */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 html,
-body {
+nav-bar{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,6 +16,7 @@ body {
 /* Navbar section */
 
 .nav {
+  
     width: 100%;
     height: 65px;
     position: fixed;
@@ -30,12 +33,21 @@ body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
 
 .nav div.main_list {
-    height:55px;
+    height:65px;
     float: right;
 }
 
@@ -57,13 +69,13 @@ body {
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #c40707;
+    color: #ff0000;
     line-height: 65px;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #7b072a;
+    color: #00E676;
 }
 
 .navTrigger {
@@ -85,13 +97,13 @@ body {
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .container {
         margin: 0;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px)  {
     .navTrigger {
         display: block;
     }
@@ -114,8 +126,8 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #ce8787;
-        
+        background-color: #111;
+        /*same background color of navbar*/
         background-position: center top;
     }
     .nav div.main_list ul li {
@@ -144,7 +156,7 @@ body {
 }
 
 .navTrigger i {
-    background-color: #efd317;
+    background-color: #ff0000;
     border-radius: 2px;
     content: '';
     display: block;
@@ -326,15 +338,9 @@ body {
     background-color: #111;
 }
 
-
-
-
-
-
-
 .myH2 {
 	text-align:center;
-	font-size: 2rem;
+	font-size: 4rem;
 }
 .myP {
 	text-align: justify;
@@ -347,6 +353,7 @@ body {
 		padding:2%;
 	}
 }
+
 
 
 /* content */
@@ -559,6 +566,7 @@ td button:focus {
 
 a {
     color: #fff;
+    font-size: 20px;
     text-decoration: none;
   }
   .pg-footer {
@@ -568,6 +576,7 @@ a {
   .footer-logo img{
       height: inherit;
       width: 250px;
+      
   }
   
   .footer {
@@ -612,14 +621,15 @@ a {
       display: inline-block;
   }
   .footer-menu {
-      margin-top: 30px;
+      margin-top: 0px;
+      font-size: 15px;
   }
   
   .footer-menu-name {
       color: #fffff2;
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 900;
-      letter-spacing: .1em;
+      letter-spacing: .01em;
       line-height: 18px;
       margin-bottom: 0;
       margin-top: 0;
@@ -642,9 +652,10 @@ a {
       margin-bottom: 0;
       margin-top: 10px;
       padding-left: 0;
+      font-size: 15px;
   }
   .footer-menu-list li {
-      margin-top: 8px;
+      margin-top: 4px;
   }
   
   .footer-menu-list li :hover{
@@ -663,38 +674,7 @@ a {
   .button:last-of-type {
       margin-right: 0;
   }
-  /* .footer-call-to-action-button {
-      background-color: #027b9a;
-      border-radius: 21px;
-      color: #fffff2;
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: .1em;
-      line-height: 18px;
-      padding: 12px 30px;
-      margin: 0 10px 10px 0;
-      text-decoration: none;
-      text-transform: uppercase;
-      transition: background-color .2s;
-      cursor: pointer;
-      position: relative;
-  } */
-  /* .footer-call-to-action {
-      margin-top: 30px;
-  } */
-  /* .footer-call-to-action-title {
-      color: #fffff2;
-      font-size: 14px;
-      font-weight: 900;
-      letter-spacing: .1em;
-      line-height: 18px;
-      margin-bottom: 0;
-      margin-top: 0;
-      text-transform: uppercase;
   
-  
-  } */
   .footer-call-to-action-link-wrapper {
       margin-bottom: 0;
       margin-top: 0px;
@@ -731,14 +711,14 @@ a {
       fill: #027b9a;
   }
   
-.footer-social-link.linkedin {
-    height: px;
-    left: 3px;
-    top: 11px;
-    width: 46px;
+  .footer-social-link.linkedin {
+      height: 46px;
+      left: 3px;
+      top: 11px;
+      width: 46px;
   }
   
-.footer-social-link {
+  .footer-social-link {
       display: block;
       padding: 10px;
       position: absolute;
@@ -777,14 +757,17 @@ a {
   
   .footer-social-link.youtube {
       height: 24px;
-      left: 123px;
+      left: 121px;
       top: 10px;
       width: 48px;
   }
   
   .footer-social-link.Instagram {
+    
+    
     left: 167.5px;
     top: 4px;
+    
   }
   
   .footer-copyright {
@@ -802,7 +785,7 @@ a {
   
   .footer-copyright-text {
     color: #fff;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 400;
       line-height: 18px;
       margin-bottom: 0;
@@ -877,16 +860,5 @@ a {
     .footer-content-column {
         width: 24.99%;
     }
-  }
-  /* @media(min-width:480px){
-      .footer-logo img{
-          height: auto;
-          width: 200px;
-      }
-  } */
-  @media (min-width: 568px) {
-    /* .footer-content-column {
-        width: 49.99%;
-    } */
   }
   
