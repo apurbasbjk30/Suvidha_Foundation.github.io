@@ -1475,6 +1475,145 @@ margin: 20px;
   font-size: 20px;
 }
 
+
+/* team */
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+/* .our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 125%;
+  border-radius: 10%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+  object-fit: cover;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.9);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #013568;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+
+/* For screens larger than 1200px (large desktops and monitors) */
+@media only screen and (min-width: 1200px) {
+
+  .our-team {
+    padding: 50px 0 60px; /* More padding for spacious look */
+    max-width: 1200px; /* Limit the maximum width to make it look neat on large screens */
+    margin: 0 auto; /* Center the content */
+  }
+
+  .our-team .picture {
+    height: 180px; /* Larger profile picture for bigger screens */
+    width: 180px;
+    margin-bottom: 70px; /* More space between the image and text */
+  }
+
+  .our-team .title {
+    font-size: 20px; /* Larger text for the title */
+    font-weight:200px;
+  }
+
+  /* Adjust social media icons to be larger and more spaced out */
+  .our-team .social li a {
+    font-size: 20px; /* Larger icons for better visibility */
+    padding: 12px;
+  }
+
+  .our-team .social {
+    bottom: -130px; /* Keep social media icons further away for more spacing */
+  }
+
+}
+
 /* collaborative */
 .collaborative{
   margin-top: 45px;
