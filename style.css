@@ -38,12 +38,12 @@ nav-bar{
 
 .nav div.logo a {
     text-decoration: none;
-    color: #fff;
+    color: #610e0e;
     font-size: 2.5rem;
 }
 
 .nav div.logo a:hover {
-    color: #00E676;
+    color: #d5c219;
 }
 
 .nav div.main_list {
@@ -69,13 +69,13 @@ nav-bar{
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #965656;
     line-height: 65px;
     font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: #00E676;
+    color: #e5f108;
 }
 
 .navTrigger {
