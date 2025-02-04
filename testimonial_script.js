@@ -7,28 +7,15 @@ $('.navTrigger').click(function () {
 });
 
 
-jQuery(document).ready(function($) {
-    "use strict";
-    //  TESTIMONIALS CAROUSEL HOOK
-    $('#customers-testimonials').owlCarousel({
-        loop: true,
-        center: true,
-        items: 3,
-        margin: 0,
-        autoplay: true,
-        dots:true,
-        autoplayTimeout: 8500,
-        smartSpeed: 450,
-        responsive: {
-          0: {
-            items: 1
-          },
-          768: {
-            items: 2
-          },
-          1170: {
-            items: 3
-          }
-        }
+$(document).ready(function() {
+ 
+    $("#owl-example").owlCarousel({
+        itemsDesktop : [1499,4],
+        itemsDesktopSmall : [1199,3],
+        itemsTablet : [899,2],
+        itemsMobile : [599,1],
+        navigation : true,
+        navigationText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
     });
-});
+    
+  });
