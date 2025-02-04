@@ -1516,6 +1516,16 @@ margin: 20px;
   justify-content: center;
   align-content: center;
 }
+
+.testi-btn{
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
 /* stats  */
 #minimal-statistics{
   width: 90%;
